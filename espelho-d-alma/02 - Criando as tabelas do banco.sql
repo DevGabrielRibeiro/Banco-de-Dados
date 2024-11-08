@@ -8,7 +8,7 @@ CREATE TABLE Unidades_Senac (
     telefone VARCHAR(20) NOT NULL
 );
 
-/* Criando a tabela Alunos*/
+/* Criando a tabela Alunos e Adicionando Chave Estrangeira*/
 CREATE TABLE Alunos (
     id_aluno INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(40) NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE Profissionais (
     tempo_na_area VARCHAR(20) NOT NULL
 );
 
-/* Criando a tabela Agendamentos*/
+/* Criando a tabela Agendamentos e Adicionando Chave Estrangeira*/
 CREATE TABLE Agendamentos (
     id_agendamento INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     fk_id_aluno INT NOT NULL,
